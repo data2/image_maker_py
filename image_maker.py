@@ -65,7 +65,7 @@ def pic_save(image, filename):
     image.save(filename)
 
 
-if __name__ == "__main__":
+def make_image(text):
     size = None
     # gen_img()
 
@@ -75,7 +75,6 @@ if __name__ == "__main__":
     # 设置文字颜色
     fillColor = "red"  # 蓝色
 
-    text = "【上交所：本周对短时间内集中申卖加剧股价异动等行为重点监控】财联社7月30日讯，上交所公告，本周沪市共发生拉抬打压、虚假申报等73起证券异常交易行为，上交所对此采取了书面警示等自律监管措施；对短时间内集中申卖加剧股价异常波动等影响市场正常交易秩序、误导投资者交易决策的异常交易行为实施重点监控，依规及时采取自律监管措施。"
     text = text.replace("财联社","")
     text = text.replace("新浪财经", "")
     text = text.replace("腾讯财经", "")
@@ -87,7 +86,7 @@ if __name__ == "__main__":
     else:
         size = (106, 302)
         filepath = "/Users/leewow/run/mine/代马数据/代马快讯/model.png"
-        filename = "/Users/leewow/run/mine/代马数据/代马快讯/model_test.png"
+        filename = "/Users/leewow/run/mine/代马数据/代马快讯/model_result.png"
 
         # 打开图片
         image = pic_open(filepath)
