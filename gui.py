@@ -21,7 +21,7 @@ class Application(Frame):
         text_input = self.textInput.get()
         image_maker.make_image(text_input)
         self.textInput.select_clear()
-        messagebox.showinfo('图片生成', '图片生成成功！')
+        # messagebox.showinfo('图片生成', '图片生成成功！')
 
 
 root = Tk()
